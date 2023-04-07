@@ -43,5 +43,10 @@ void merge(int low, int mid, int high) {
         zuhair[i] = temp[i];
     }
 }
+void mergeSort(int low, int high) {
+    if (low >= high) {
+        return;
+    }
 
+   
 
