@@ -59,6 +59,14 @@ void input() {
         cin >> zuhair[i];
     }
 }
+void display() {
+    cout << "Hasil Pengurutan: " << endl;
+    for (int i = 0; i < 79; i++) {
+        cout << zuhair[i] << " ";
+    }
+    cout << endl;
+}
+
 
 }
 
