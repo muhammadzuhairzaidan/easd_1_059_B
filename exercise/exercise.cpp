@@ -16,5 +16,16 @@ void merge(int low, int mid, int high) {
     int i = low;
     int AR = mid + 1;
     int k = low;
+    while (i <= mid && AR <= high) {
+        if (zuhair[i] <= zuhair[AR]) {
+            temp[k] = zuhair[i];
+            i++;
+        }
+        else {
+            temp[k] = zuhair[AR];
+            AR++;
+        }
+        k++;
+    }
 
     
