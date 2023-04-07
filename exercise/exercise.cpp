@@ -1,20 +1,20 @@
-// karena algoritma adalah cara terstruktur untuk menyelesaikan yugas tertentu
-//
+// karena algoritma adalah cara terstruktur untuk menyelesaikan tugas tertentu
+// array dan link list
+// ukuran input,jenis algoritma,penggunaan struktur data,sistem operasi
+// quicksort
+// bubblesort insertionsort dan selectionsort termasuk dalam quadratic sedangkan quicksort dan mergesort masuk dalam loglinear
 
 #include <iostream>
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
-}
+const int max = 59+ 20 - 2 * 15 + 10 + 20; // jumlah maksimum data
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+int zuhair[79];
+int temp[79];
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+void merge(int low, int mid, int high) {
+    int i = low;
+    int AR = mid + 1;
+    int k = low;
+
+    
