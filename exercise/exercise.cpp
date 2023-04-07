@@ -14,17 +14,23 @@ int temp[79];
 
 void merge(int low, int mid, int high) {
     int i = low;
-    int AR = mid + 1;
+    int ZZ = mid + 1;
     int k = low;
-    while (i <= mid && AR <= high) {
-        if (zuhair[i] <= zuhair[AR]) {
+    while (i <= mid && ZZ  <= high) {
+        if (zuhair[i] <= zuhair[ZZ]) {
             temp[k] = zuhair[i];
             i++;
         }
         else {
-            temp[k] = zuhair[AR];
-            AR++;
+            temp[k] = zuhair[ZZ];
+            ZZ++;
         }
+        k++;
+
+    }
+    while (ZZ <= high) {
+        temp[k] = zuhair[ZZ];
+        ZZ++;
         k++;
     }
 
