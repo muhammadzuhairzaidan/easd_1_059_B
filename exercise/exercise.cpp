@@ -33,5 +33,15 @@ void merge(int low, int mid, int high) {
         ZZ++;
         k++;
     }
+    while (i <= mid) {
+        temp[k] = zuhair[i];
+        i++;
+        k++;
+    }
 
-    
+    for (int i = low; i <= high; i++) {
+        zuhair[i] = temp[i];
+    }
+}
+
+
